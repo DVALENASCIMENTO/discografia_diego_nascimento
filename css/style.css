@@ -1,0 +1,319 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* BODY */
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+max-width:800px;
+margin:auto;
+margin-bottom:40px;
+}
+
+/* FOTO DO ARTISTA */
+
+.foto{
+width:180px;
+border-radius:50%;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.7);
+}
+
+/* TÍTULO */
+
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+/* TEXTO */
+
+header p{
+color:#ccc;
+font-size:16px;
+max-width:600px;
+margin:auto;
+}
+
+/* GRID DA DISCOGRAFIA */
+
+.discografia{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+max-width:1100px;
+margin:auto;
+margin-top:40px;
+}
+
+/* CARD DO ÁLBUM */
+
+.album{
+position:relative;
+display:block;
+overflow:hidden;
+border-radius:10px;
+box-shadow:0 0 20px rgba(0,0,0,0.6);
+}
+
+/* IMAGEM DO CD */
+
+.album img{
+width:100%;
+display:block;
+transition:0.4s;
+}
+
+/* OVERLAY */
+
+.info{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(transparent,rgba(0,0,0,0.9));
+color:white;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+align-items:center;
+
+padding:20px;
+
+opacity:0;
+transition:0.4s;
+}
+
+/* TEXTO DO ÁLBUM */
+
+.info h3{
+font-size:20px;
+margin-bottom:5px;
+}
+
+.info p{
+font-size:14px;
+color:#ccc;
+margin-bottom:10px;
+}
+
+/* BOTÃO PLAY */
+
+.play{
+background:#1db954;
+padding:8px 14px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* EFEITOS HOVER */
+
+.album:hover img{
+transform:scale(1.1);
+}
+
+.album:hover .info{
+opacity:1;
+}
+
+/* PÁGINA DO ÁLBUM */
+
+#titulo-album{
+font-size:32px;
+margin-bottom:10px;
+}
+
+#descricao-album{
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
+color:#ccc;
+font-size:16px;
+}
+
+/* CAPA GRANDE */
+
+.capa-grande{
+width:320px;
+max-width:90%;
+border-radius:10px;
+box-shadow:0 0 20px rgba(0,0,0,0.8);
+margin:20px auto;
+display:block;
+}
+
+/* PLAYER */
+
+#musica-atual{
+font-size:20px;
+margin-top:15px;
+}
+
+#descricao-musica{
+max-width:600px;
+margin:10px auto 20px auto;
+color:#bbb;
+font-size:15px;
+}
+
+/* CONTROLES */
+
+.controles{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+/* BOTÕES */
+
+button{
+padding:10px 20px;
+font-size:16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+background:#444;
+color:white;
+transition:0.3s;
+}
+
+button:hover{
+background:#666;
+transform:scale(1.05);
+}
+
+/* LISTA DE MÚSICAS */
+
+#lista-musicas{
+list-style:decimal;
+text-align:left;
+max-width:500px;
+margin:30px auto;
+padding-left:20px;
+}
+
+#lista-musicas li{
+padding:8px;
+cursor:pointer;
+border-bottom:1px solid #333;
+transition:0.3s;
+}
+
+#lista-musicas li:hover{
+background:#222;
+padding-left:12px;
+}
+
+/* PLAYER AUDIO */
+
+audio{
+width:100%;
+max-width:500px;
+margin:20px auto;
+display:block;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+/* TABLET */
+
+@media (max-width:900px){
+
+h1{
+font-size:30px;
+}
+
+.discografia{
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+}
+
+}
+
+/* CELULAR */
+
+@media (max-width:600px){
+
+body{
+padding:15px;
+}
+
+h1{
+font-size:26px;
+}
+
+header p{
+font-size:15px;
+padding:0 10px;
+}
+
+/* CAPAS */
+
+.discografia{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.info h3{
+font-size:16px;
+}
+
+/* PLAYER */
+
+.capa-grande{
+width:220px;
+}
+
+#musica-atual{
+font-size:18px;
+}
+
+#descricao-musica{
+font-size:14px;
+padding:0 10px;
+}
+
+/* BOTÕES */
+
+button{
+font-size:14px;
+padding:8px 14px;
+}
+
+}
+
+/* CELULAR PEQUENO */
+
+@media (max-width:400px){
+
+.controles{
+flex-direction:column;
+align-items:center;
+}
+
+button{
+width:100%;
+max-width:250px;
+}
+
+}

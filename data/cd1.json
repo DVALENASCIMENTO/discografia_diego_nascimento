@@ -1,0 +1,68 @@
+{
+ "album": "Nome do Álbum",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"Música 1",
+   "arquivo":"../musicas/cd1/musica1.mp3",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"Música 2",
+   "arquivo":"../musicas/cd1/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Música 3",
+   "arquivo":"../musicas/cd1/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"Música 4",
+   "arquivo":"../musicas/cd1/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Música 5",
+   "arquivo":"../musicas/cd1/musica5.mp3",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Música 6",
+   "arquivo":"../musicas/cd1/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"Música 7",
+   "arquivo":"../musicas/cd1/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"Música 8",
+   "arquivo":"../musicas/cd1/musica8.mp3",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"Música 9",
+   "arquivo":"../musicas/cd1/musica9.mp3",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Música 10",
+   "arquivo":"../musicas/cd1/musica10.mp3",
+   "descricao":"Encerramento do álbum."
+  }
+
+ ]
+}
