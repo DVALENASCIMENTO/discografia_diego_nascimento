@@ -1,16 +1,45 @@
-let album
+let album = null
 let musicaAtual = 0
 
-const player = document.getElementById("player")
-const tituloAlbum = document.getElementById("titulo-album")
-const descricaoAlbum = document.getElementById("descricao-album")
-const musicaAtualTexto = document.getElementById("musica-atual")
-const descricaoMusica = document.getElementById("descricao-musica")
+let player
+let tituloAlbum
+let descricaoAlbum
+let musicaAtualTexto
+let descricaoMusica
 
+/* ========================= */
+/* INICIALIZAÇÃO SEGURA */
+/* ========================= */
+document.addEventListener("DOMContentLoaded", () => {
+
+player = document.getElementById("player")
+tituloAlbum = document.getElementById("titulo-album")
+descricaoAlbum = document.getElementById("descricao-album")
+musicaAtualTexto = document.getElementById("musica-atual")
+descricaoMusica = document.getElementById("descricao-musica")
+
+if(!player){
+console.error("Elemento #player não encontrado")
+return
+}
+
+/* AUTO PRÓXIMA */
+player.addEventListener("ended", proxima)
+
+})
+
+/* ========================= */
+/* CARREGAR ÁLBUM */
+/* ========================= */
 function carregarAlbum(caminho){
 
 fetch(caminho)
-.then(res => res.json())
+.then(res => {
+if(!res.ok){
+throw new Error("Erro ao carregar JSON")
+}
+return res.json()
+})
 .then(data =>{
 
 album = data
@@ -18,69 +47,121 @@ album = data
 tituloAlbum.innerText = data.album
 descricaoAlbum.innerText = data.descricao
 
+musicaAtual = 0
 carregarMusica()
 
+})
+.catch(err => {
+console.error("Erro:", err)
+alert("Erro ao carregar o álbum. Verifique o caminho do JSON.")
 })
 
 }
 
+/* ========================= */
+/* CARREGAR MÚSICA */
+/* ========================= */
 function carregarMusica(){
 
-player.src = album.musicas[musicaAtual].arquivo
+if(!album || !album.musicas){
+console.warn("Álbum não carregado")
+return
+}
 
-musicaAtualTexto.innerText =
-"Tocando: " + album.musicas[musicaAtual].titulo
+const musica = album.musicas[musicaAtual]
 
-descricaoMusica.innerText =
-album.musicas[musicaAtual].descricao
+if(!musica){
+console.warn("Música inválida")
+return
+}
 
-player.play()
+player.src = musica.arquivo
+
+musicaAtualTexto.innerText = "Tocando: " + musica.titulo
+descricaoMusica.innerText = musica.descricao
+
+player.load()
+
+player.play().catch(() => {
+console.log("Autoplay bloqueado — clique em Play")
+})
 
 }
 
+/* ========================= */
+/* PRÓXIMA */
+/* ========================= */
 function proxima(){
 
-musicaAtual++
+if(!album) return
 
-if(musicaAtual >= album.musicas.length){
-musicaAtual = 0
-}
-
+musicaAtual = (musicaAtual + 1) % album.musicas.length
 carregarMusica()
 
 }
 
+/* ========================= */
+/* ANTERIOR */
+/* ========================= */
 function anterior(){
 
-musicaAtual--
+if(!album) return
 
-if(musicaAtual < 0){
-musicaAtual = album.musicas.length - 1
-}
-
+musicaAtual = (musicaAtual - 1 + album.musicas.length) % album.musicas.length
 carregarMusica()
 
 }
 
+/* ========================= */
+/* PLAY / PAUSE */
+/* ========================= */
 function playPause(){
 
+if(!player || player.src === ""){
+console.warn("Nenhuma música carregada")
+return
+}
+
 if(player.paused){
-player.play()
+player.play().catch(() => {
+console.log("Clique novamente para tocar")
+})
 }else{
 player.pause()
 }
 
 }
 
+/* ========================= */
+/* IR PARA FAIXA */
+/* ========================= */
 function irPara(index){
+
+if(!album) return
+
+if(index < 0 || index >= album.musicas.length){
+console.warn("Índice inválido")
+return
+}
 
 musicaAtual = index
 carregarMusica()
 
 }
 
-player.addEventListener("ended", proxima)
-
+/* ========================= */
+/* VOLTAR */
+/* ========================= */
 function voltar(){
 history.back()
+}
+
+/* ========================= */
+/* FECHAR POPUP */
+/* ========================= */
+function fecharPopup() {
+const popup = document.getElementById("popup")
+if(popup){
+popup.style.display = "none"
+}
 }

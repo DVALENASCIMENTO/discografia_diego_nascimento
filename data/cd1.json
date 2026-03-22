@@ -1,65 +1,65 @@
 {
- "album": "Nome do Álbum",
+ "album": "Álbum Essência da Adoração",
  "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
  
  "musicas":[
 
   {
-   "titulo":"Música 1",
+   "titulo":"Contigo Saltarei Muralhas",
    "arquivo":"../musicas/cd1/musica1.mp3",
    "descricao":"Primeira faixa do álbum."
   },
 
   {
-   "titulo":"Música 2",
+   "titulo":"Eu Vou Prosseguir",
    "arquivo":"../musicas/cd1/musica2.mp3",
    "descricao":"Canção sobre esperança."
   },
 
   {
-   "titulo":"Música 3",
+   "titulo":"Essência da Adoração",
    "arquivo":"../musicas/cd1/musica3.mp3",
    "descricao":"Composição inspirada em experiências pessoais."
   },
 
   {
-   "titulo":"Música 4",
+   "titulo":"Me Saciar",
    "arquivo":"../musicas/cd1/musica4.mp3",
    "descricao":"Faixa contemplativa."
   },
 
   {
-   "titulo":"Música 5",
+   "titulo":"Pai, Estou Aqui",
    "arquivo":"../musicas/cd1/musica5.mp3",
    "descricao":"Mensagem de fé."
   },
 
   {
-   "titulo":"Música 6",
+   "titulo":"O Justo Viverá Pela Fé",
    "arquivo":"../musicas/cd1/musica6.mp3",
    "descricao":"Melodia suave."
   },
 
   {
-   "titulo":"Música 7",
+   "titulo":"Jeová",
    "arquivo":"../musicas/cd1/musica7.mp3",
    "descricao":"Expressa alegria."
   },
 
   {
-   "titulo":"Música 8",
+   "titulo":"Brisa Suave",
    "arquivo":"../musicas/cd1/musica8.mp3",
    "descricao":"Reflexão musical."
   },
 
   {
-   "titulo":"Música 9",
+   "titulo":"Sacrifício de Louvor",
    "arquivo":"../musicas/cd1/musica9.mp3",
    "descricao":"Canção sobre o tempo."
   },
 
   {
-   "titulo":"Música 10",
+   "titulo":"Te Anseio",
    "arquivo":"../musicas/cd1/musica10.mp3",
    "descricao":"Encerramento do álbum."
   }

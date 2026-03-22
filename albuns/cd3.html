@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Essência da Adoração</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<!-- IMPORTANTE: defer garante que o HTML carregue antes do JS -->
+<script src="../js/script.js" defer></script>
+
+</head>
+
+<body>
+
+<h1 id="titulo-album"></h1>
+
+<img src="../img/cd3.png" class="capa-grande">
+
+<p id="descricao-album"></p>
+
+<h2 id="musica-atual"></h2>
+
+<p id="descricao-musica"></p>
+
+<!-- controls ajuda no debug -->
+<audio id="player" controls></audio>
+
+<div class="controles">
+<button onclick="anterior()">⏮ Anterior</button>
+<button onclick="playPause()">⏯ Play/Pause</button>
+<button onclick="proxima()">⏭ Próxima</button>
+</div>
+
+<h2>Faixas do álbum</h2>
+
+<ol id="lista-musicas">
+<li onclick="irPara(0)">Contigo Saltarei Muralhas</li>
+<li onclick="irPara(1)">Eu Vou Prosseguir</li>
+<li onclick="irPara(2)">Essência da Adoração</li>
+<li onclick="irPara(3)">Me Saciar</li>
+<li onclick="irPara(4)">Pai, Estou Aqui</li>
+<li onclick="irPara(5)">O Justo Viverá Pela Fé</li>
+<li onclick="irPara(6)">Jeová</li>
+<li onclick="irPara(7)">Brisa Suave</li>
+<li onclick="irPara(8)">Sacrifício de Louvor</li>
+<li onclick="irPara(9)">Te Anseio</li>
+</ol>
+
+<button onclick="window.location.href='../index.html'">Voltar</button>
+
+<!-- INICIALIZAÇÃO SEGURA -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof carregarAlbum === "function") {
+        carregarAlbum("../data/cd3.json")
+    } else {
+        console.error("player.js não carregou")
+        alert("Erro ao carregar o player.js (verifique o caminho)")
+    }
+})
+</script>
+
+</body>
+</html>

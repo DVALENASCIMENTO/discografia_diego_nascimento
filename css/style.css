@@ -1,57 +1,156 @@
+/* ========================= */
 /* RESET */
-
+/* ========================= */
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 }
 
-/* BODY */
+/* ========================= */
+/* VARIÁVEIS (PALETA) */
+/* ========================= */
+:root{
+--bg-main:#000;
+--bg-secondary:#111;
+--accent:#ff4d2d;
+--accent-soft:#ff7a3d;
+--text-main:#f5f5f5;
+--text-secondary:#bfbfbf;
+--wood:#a86b32;
+}
 
+/* ========================= */
+/* BODY (PRETO REAL) */
+/* ========================= */
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:#111;
-color:white;
+font-family:'Segoe UI', Arial, sans-serif;
+background:#000;
+color:var(--text-main);
 text-align:center;
 padding:20px;
 line-height:1.6;
+overflow-x:hidden;
 }
 
-/* HEADER */
-
-header{
-max-width:800px;
-margin:auto;
-margin-bottom:40px;
+/* ========================= */
+/* LUZ DE PALCO (SUTIL) */
+/* ========================= */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 10%, rgba(255,77,45,0.12), transparent 40%),
+radial-gradient(circle at 80% 15%, rgba(255,122,61,0.08), transparent 40%),
+radial-gradient(circle at 50% 90%, rgba(168,107,50,0.06), transparent 50%);
+z-index:-1;
+pointer-events:none;
 }
 
-/* FOTO DO ARTISTA */
-
-.foto{
-width:180px;
-border-radius:50%;
-margin-bottom:20px;
-box-shadow:0 0 20px rgba(0,0,0,0.7);
+/* ========================= */
+/* POPUP */
+/* ========================= */
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:999;
 }
 
-/* TÍTULO */
-
-h1{
-font-size:36px;
-margin-bottom:10px;
+.popup-content{
+position:relative;
+width:90%;
+max-width:900px;
+border-radius:12px;
+overflow:hidden;
 }
 
-/* TEXTO */
+/* IMAGEM */
+.foto-bg{
+width:100%;
+height:70vh;
+object-fit:cover;
+filter:brightness(0.35) contrast(1.2);
+}
 
-header p{
-color:#ccc;
-font-size:16px;
+/* OVERLAY */
+.overlay{
+position:absolute;
+top:65%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+color:#fff;
 max-width:600px;
-margin:auto;
+padding:20px;
+animation:fadeUp 1s ease forwards;
 }
 
-/* GRID DA DISCOGRAFIA */
+@keyframes fadeUp{
+from{opacity:0;transform:translate(-50%,-20%);}
+to{opacity:1;transform:translate(-50%,-50%);}
+}
 
+.overlay h1{
+font-size:34px;
+margin-bottom:10px;
+text-shadow:0 0 12px rgba(255,77,45,0.5);
+}
+
+.overlay p{
+font-size:15px;
+color:var(--text-secondary);
+margin-bottom:20px;
+}
+
+/* BOTÃO PRINCIPAL */
+.overlay button{
+background:linear-gradient(45deg,var(--accent),var(--accent-soft));
+border:none;
+padding:12px 30px;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+color:#fff;
+transition:0.3s;
+box-shadow:0 0 10px rgba(255,77,45,0.4);
+}
+
+.overlay button:hover{
+transform:scale(1.08);
+box-shadow:0 0 18px rgba(255,77,45,0.7);
+}
+
+/* FECHAR */
+.fechar{
+position:absolute;
+top:20px;
+right:25px;
+font-size:30px;
+color:#fff;
+cursor:pointer;
+z-index:2;
+transition:0.3s;
+}
+
+.fechar:hover{
+color:var(--accent);
+transform:scale(1.2);
+}
+
+/* ========================= */
+/* DISCOGRAFIA */
+/* ========================= */
 .discografia{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -61,120 +160,90 @@ margin:auto;
 margin-top:40px;
 }
 
-/* CARD DO ÁLBUM */
-
+/* CARD */
 .album{
 position:relative;
 display:block;
 overflow:hidden;
-border-radius:10px;
-box-shadow:0 0 20px rgba(0,0,0,0.6);
-}
-
-/* IMAGEM DO CD */
-
-.album img{
-width:100%;
-display:block;
+border-radius:12px;
+background:#0a0a0a;
+box-shadow:0 0 20px rgba(0,0,0,0.8);
 transition:0.4s;
 }
 
-/* OVERLAY */
+.album:hover{
+transform:translateY(-6px);
+box-shadow:0 0 25px rgba(255,77,45,0.2);
+}
 
+/* IMG */
+.album img{
+width:100%;
+transition:0.5s;
+}
+
+.album:hover img{
+transform:scale(1.1);
+filter:brightness(1.1);
+}
+
+/* OVERLAY CARD */
 .info{
 position:absolute;
 bottom:0;
 left:0;
 width:100%;
 height:100%;
-background:linear-gradient(transparent,rgba(0,0,0,0.9));
-color:white;
-
+background:linear-gradient(transparent, rgba(0,0,0,0.95));
 display:flex;
 flex-direction:column;
 justify-content:flex-end;
 align-items:center;
-
 padding:20px;
-
 opacity:0;
 transition:0.4s;
-}
-
-/* TEXTO DO ÁLBUM */
-
-.info h3{
-font-size:20px;
-margin-bottom:5px;
-}
-
-.info p{
-font-size:14px;
-color:#ccc;
-margin-bottom:10px;
-}
-
-/* BOTÃO PLAY */
-
-.play{
-background:#1db954;
-padding:8px 14px;
-border-radius:20px;
-font-size:14px;
-}
-
-/* EFEITOS HOVER */
-
-.album:hover img{
-transform:scale(1.1);
 }
 
 .album:hover .info{
 opacity:1;
 }
 
-/* PÁGINA DO ÁLBUM */
+.info h3{
+font-size:20px;
+margin-bottom:5px;
+text-shadow:0 0 8px rgba(255,77,45,0.5);
+}
 
-#titulo-album{
-font-size:32px;
+.info p{
+font-size:14px;
+color:var(--text-secondary);
 margin-bottom:10px;
 }
 
-#descricao-album{
-max-width:700px;
-margin:auto;
-margin-bottom:25px;
-color:#ccc;
-font-size:16px;
+/* PLAY */
+.play{
+background:var(--accent);
+padding:8px 16px;
+border-radius:20px;
+box-shadow:0 0 8px rgba(255,77,45,0.5);
 }
 
-/* CAPA GRANDE */
-
-.capa-grande{
-width:320px;
-max-width:90%;
-border-radius:10px;
-box-shadow:0 0 20px rgba(0,0,0,0.8);
-margin:20px auto;
-display:block;
-}
-
+/* ========================= */
 /* PLAYER */
-
+/* ========================= */
 #musica-atual{
 font-size:20px;
 margin-top:15px;
+text-shadow:0 0 8px rgba(255,77,45,0.4);
 }
 
 #descricao-musica{
 max-width:600px;
 margin:10px auto 20px auto;
-color:#bbb;
-font-size:15px;
+color:var(--text-secondary);
 }
 
 /* CONTROLES */
-
 .controles{
 display:flex;
 justify-content:center;
@@ -184,25 +253,26 @@ margin-bottom:30px;
 }
 
 /* BOTÕES */
-
 button{
 padding:10px 20px;
 font-size:16px;
 border:none;
-border-radius:6px;
+border-radius:8px;
 cursor:pointer;
-background:#444;
-color:white;
+background:#111;
+color:#fff;
 transition:0.3s;
 }
 
 button:hover{
-background:#666;
+background:#1a1a1a;
 transform:scale(1.05);
+box-shadow:0 0 8px rgba(255,77,45,0.3);
 }
 
-/* LISTA DE MÚSICAS */
-
+/* ========================= */
+/* LISTA */
+/* ========================= */
 #lista-musicas{
 list-style:decimal;
 text-align:left;
@@ -212,108 +282,48 @@ padding-left:20px;
 }
 
 #lista-musicas li{
-padding:8px;
+padding:10px;
 cursor:pointer;
-border-bottom:1px solid #333;
+border-bottom:1px solid #222;
 transition:0.3s;
 }
 
 #lista-musicas li:hover{
-background:#222;
-padding-left:12px;
+background:#111;
+padding-left:15px;
+color:var(--accent);
 }
 
-/* PLAYER AUDIO */
-
+/* ========================= */
+/* AUDIO */
+/* ========================= */
 audio{
 width:100%;
 max-width:500px;
 margin:20px auto;
 display:block;
+filter:brightness(1.2);
 }
 
 /* ========================= */
-/* RESPONSIVIDADE */
+/* RESPONSIVO */
 /* ========================= */
-
-/* TABLET */
-
-@media (max-width:900px){
-
-h1{
-font-size:30px;
-}
-
-.discografia{
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-}
-
-}
-
-/* CELULAR */
-
 @media (max-width:600px){
 
-body{
-padding:15px;
+.overlay h1{
+font-size:28px;
 }
-
-h1{
-font-size:26px;
-}
-
-header p{
-font-size:15px;
-padding:0 10px;
-}
-
-/* CAPAS */
 
 .discografia{
 grid-template-columns:repeat(2,1fr);
-gap:20px;
 }
-
-.info h3{
-font-size:16px;
-}
-
-/* PLAYER */
 
 .capa-grande{
 width:220px;
 }
 
-#musica-atual{
-font-size:18px;
-}
-
-#descricao-musica{
-font-size:14px;
-padding:0 10px;
-}
-
-/* BOTÕES */
-
 button{
 font-size:14px;
 padding:8px 14px;
 }
-
-}
-
-/* CELULAR PEQUENO */
-
-@media (max-width:400px){
-
-.controles{
-flex-direction:column;
-align-items:center;
-}
-
-button{
-width:100%;
-max-width:250px;
-}
-
 }
