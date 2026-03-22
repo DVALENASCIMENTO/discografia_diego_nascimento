@@ -1,0 +1,68 @@
+{
+ "album": "Nome Sobre Todo Nome",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"Forte e Poderoso",
+   "arquivo":"../musicas/cd2/musica1.mp3",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"És Bem Vindo Neste Lugar",
+   "arquivo":"../musicas/cd2/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Digno é o Cordeiro",
+   "arquivo":"../musicas/cd2/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"Exaltado Soberanamente",
+   "arquivo":"../musicas/cd2/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Santo Deus",
+   "arquivo":"../musicas/cd2/musica5.mp3",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Abba Pai",
+   "arquivo":"../musicas/cd2/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"Nome Sobre Todo Nome",
+   "arquivo":"../musicas/cd2/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"Todo Joelho se Dobrará",
+   "arquivo":"../musicas/cd2/musica8.mp3",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"Meu Coração Arde por Ti",
+   "arquivo":"../musicas/cd2/musica9.wav",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Eu Me Consagro",
+   "arquivo":"../musicas/cd2/musica10.wav",
+   "descricao":"Encerramento do álbum."
+  }
+
+ ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Nome Sobre Todo Nome</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<!-- IMPORTANTE: defer garante que o HTML carregue antes do JS -->
+<script src="../js/script.js" defer></script>
+
+</head>
+
+<body>
+
+<h1 id="titulo-album"></h1>
+
+<img src="../img/cd2.png" class="capa-grande">
+
+<p id="descricao-album"></p>
+
+<h2 id="musica-atual"></h2>
+
+<p id="descricao-musica"></p>
+
+<!-- controls ajuda no debug -->
+<audio id="player" controls></audio>
+
+<div class="controles">
+<button onclick="anterior()">⏮ Anterior</button>
+<button onclick="playPause()">⏯ Play/Pause</button>
+<button onclick="proxima()">⏭ Próxima</button>
+</div>
+
+<h2>Faixas do álbum</h2>
+
+<ol id="lista-musicas">
+<li onclick="irPara(0)">Forte e Poderoso</li>
+<li onclick="irPara(1)">És Bem Vindo Neste Lugar</li>
+<li onclick="irPara(2)">Digno é o Cordeiro</li>
+<li onclick="irPara(3)">Exaltado Soberanamente</li>
+<li onclick="irPara(4)">Santo Deus</li>
+<li onclick="irPara(5)">Abba Pai</li>
+<li onclick="irPara(6)">Nome Sobre Todo Nome</li>
+<li onclick="irPara(7)">Todo Joelho se Dobrará</li>
+<li onclick="irPara(8)">Meu Coração Arde por Ti</li>
+<li onclick="irPara(9)">Eu Me Consagro</li>
+</ol>
+
+<button onclick="window.location.href='../index.html'">Voltar</button>
+
+<!-- INICIALIZAÇÃO SEGURA -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof carregarAlbum === "function") {
+        carregarAlbum("../data/cd2.json")
+    } else {
+        console.error("player.js não carregou")
+        alert("Erro ao carregar o player.js (verifique o caminho)")
+    }
+})
+</script>
+
+</body>
+</html>
