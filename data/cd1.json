@@ -1,66 +1,66 @@
 {
- "album": "Álbum Essência da Adoração",
+ "album": "Álbum: Senhor e Salvador",
  "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
  
  "musicas":[
 
   {
-   "titulo":"Contigo Saltarei Muralhas",
-   "arquivo":"../musicas/cd1/musica1.mp3",
+   "titulo":"Abertura",
+   "arquivo":"../musicas/cd1/musica1.wma",
    "descricao":"Primeira faixa do álbum."
   },
 
   {
-   "titulo":"Eu Vou Prosseguir",
-   "arquivo":"../musicas/cd1/musica2.mp3",
+   "titulo":"Deus Forte",
+   "arquivo":"../musicas/cd1/musica2.wma",
    "descricao":"Canção sobre esperança."
   },
 
   {
-   "titulo":"Essência da Adoração",
-   "arquivo":"../musicas/cd1/musica3.mp3",
+   "titulo":"Holy Spirit",
+   "arquivo":"../musicas/cd1/musica3.wma",
    "descricao":"Composição inspirada em experiências pessoais."
   },
 
   {
-   "titulo":"Me Saciar",
-   "arquivo":"../musicas/cd1/musica4.mp3",
+   "titulo":"Hosana",
+   "arquivo":"../musicas/cd1/musica4.wma",
    "descricao":"Faixa contemplativa."
   },
 
   {
-   "titulo":"Pai, Estou Aqui",
-   "arquivo":"../musicas/cd1/musica5.mp3",
+   "titulo":"Meu Amigo, Meu Protetor",
+   "arquivo":"../musicas/cd1/musica5.wma",
    "descricao":"Mensagem de fé."
   },
 
   {
-   "titulo":"O Justo Viverá Pela Fé",
-   "arquivo":"../musicas/cd1/musica6.mp3",
+   "titulo":"Jesus",
+   "arquivo":"../musicas/cd1/musica6.wma",
    "descricao":"Melodia suave."
   },
 
   {
-   "titulo":"Jeová",
-   "arquivo":"../musicas/cd1/musica7.mp3",
+   "titulo":"Redentor",
+   "arquivo":"../musicas/cd1/musica7.wma",
    "descricao":"Expressa alegria."
   },
 
   {
-   "titulo":"Brisa Suave",
-   "arquivo":"../musicas/cd1/musica8.mp3",
+   "titulo":"Em Tua Presença",
+   "arquivo":"../musicas/cd1/musica8.wma",
    "descricao":"Reflexão musical."
   },
 
   {
-   "titulo":"Sacrifício de Louvor",
-   "arquivo":"../musicas/cd1/musica9.mp3",
+   "titulo":"Senhor e Salvador",
+   "arquivo":"../musicas/cd1/musica9.wma",
    "descricao":"Canção sobre o tempo."
   },
 
   {
-   "titulo":"Te Anseio",
-   "arquivo":"../musicas/cd1/musica10.mp3",
+   "titulo":"Emanuel",
+   "arquivo":"../musicas/cd1/musica10.wma",
    "descricao":"Encerramento do álbum."
   }
 

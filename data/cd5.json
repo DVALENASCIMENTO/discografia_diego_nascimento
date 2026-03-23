@@ -1,0 +1,75 @@
+{
+ "album": "Álbum: Aviva Tua Obra, Senhor",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"Aviva Tua Obra, Senhor",
+   "arquivo":"../musicas/cd5/musica1.mp3",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"Eu Me Humilharei",
+   "arquivo":"../musicas/cd5/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Primeiro Amor",
+   "arquivo":"../musicas/cd5/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"De Graça Recebi, De Graça Vou Dar",
+   "arquivo":"../musicas/cd5/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Não Há Avivamento Sem Compaixão",
+   "arquivo":"../musicas/cd5/musica5.mp3",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Queima em Mim",
+   "arquivo":"../musicas/cd5/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"Eu Te Amo, Jesus",
+   "arquivo":"../musicas/cd5/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"Quero Ser Conhecido Por Ti",
+   "arquivo":"../musicas/cd5/musica8.mp3",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"Aviva o Meu Coração",
+   "arquivo":"../musicas/cd5/musica9.mp3",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Cordeiro de Deus",
+   "arquivo":"../musicas/cd5/musica10.wav",
+   "descricao":"Encerramento do álbum."
+  },
+
+    {
+   "titulo":"Heróis da Fé",
+   "arquivo":"../musicas/cd5/musica11.mp3",
+   "descricao":"Encerramento do álbum."
+  }
+
+
+ ]
+}

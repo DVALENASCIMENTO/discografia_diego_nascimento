@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Aviva Tua Obra, Senhor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<!-- IMPORTANTE: defer garante que o HTML carregue antes do JS -->
+<script src="../js/script.js" defer></script>
+
+</head>
+
+<body>
+
+<h1 id="titulo-album"></h1>
+
+<img src="../img/cd5.png" class="capa-grande">
+
+<p id="descricao-album"></p>
+
+<h2 id="musica-atual"></h2>
+
+<p id="descricao-musica"></p>
+
+<!-- controls ajuda no debug -->
+<audio id="player" controls></audio>
+
+<div class="controles">
+<button onclick="anterior()">⏮ Anterior</button>
+<button onclick="playPause()">⏯ Play/Pause</button>
+<button onclick="proxima()">⏭ Próxima</button>
+</div>
+
+<h2>Faixas do álbum</h2>
+
+<ol id="lista-musicas">
+<li onclick="irPara(0)">Aviva Tua Obra, Senhor</li>
+<li onclick="irPara(1)">Eu Me Humilharei</li>
+<li onclick="irPara(2)">Primeiro Amor</li>
+<li onclick="irPara(3)">De Graça Recebi, De Graça Vou Dar</li>
+<li onclick="irPara(4)">Não Há Avivamento Sem Compaixão</li>
+<li onclick="irPara(5)">Queima em Mim</li>
+<li onclick="irPara(6)">Eu Te Amo, Jesus</li>
+<li onclick="irPara(7)">Quero Ser Conhecido Por Ti</li>
+<li onclick="irPara(8)">Aviva o Meu Coração</li>
+<li onclick="irPara(9)">Cordeiro de Deus</li>
+<li onclick="irPara(9)">Heróis da Fé</li>
+</ol>
+
+<button onclick="window.location.href='../index.html'">Voltar</button>
+
+<!-- INICIALIZAÇÃO SEGURA -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof carregarAlbum === "function") {
+        carregarAlbum("../data/cd5.json")
+    } else {
+        console.error("player.js não carregou")
+        alert("Erro ao carregar o player.js (verifique o caminho)")
+    }
+})
+</script>
+
+</body>
+</html>

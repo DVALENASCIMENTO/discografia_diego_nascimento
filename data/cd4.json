@@ -1,0 +1,68 @@
+{
+ "album": "Álbum: Jardim Fechado",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"A Alegria do Senhor",
+   "arquivo":"../musicas/cd4/musica1.mp3",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"Poderoso",
+   "arquivo":"../musicas/cd4/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Exaltação",
+   "arquivo":"../musicas/cd4/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"Adorar-te, Santo Deus",
+   "arquivo":"../musicas/cd4/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Jardim Fechado",
+   "arquivo":"../musicas/cd4/musica5.wav",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Teu Amor, Meu Estandarte",
+   "arquivo":"../musicas/cd4/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"É Tempo de Cantar",
+   "arquivo":"../musicas/cd4/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"Forte Como a Morte",
+   "arquivo":"../musicas/cd4/musica8.mp3",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"Água da Vida",
+   "arquivo":"../musicas/cd4/musica9.mp3",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Não Sou Digno",
+   "arquivo":"../musicas/cd4/musica10.mp3",
+   "descricao":"Encerramento do álbum."
+  }
+
+ ]
+}
