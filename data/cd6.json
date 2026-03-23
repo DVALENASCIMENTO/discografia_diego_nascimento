@@ -1,0 +1,69 @@
+{
+ "album": "Álbum: Shemá Yisrael",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"Shemá",
+   "arquivo":"../musicas/cd6/musica1.wav",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"Birkat Kohanin",
+   "arquivo":"../musicas/cd6/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Shemá Yisrael",
+   "arquivo":"../musicas/cd6/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"Baruch Atah Yeshua",
+   "arquivo":"../musicas/cd6/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Baruch Ha Ba B´shem Adonai",
+   "arquivo":"../musicas/cd6/musica5.mp3",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Tehillim 23",
+   "arquivo":"../musicas/cd6/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"Santo, Santo, Santo",
+   "arquivo":"../musicas/cd6/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"Clamo Adonai (Salmo 18)",
+   "arquivo":"../musicas/cd6/musica8.wav",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"Adorai ao Cordeiro",
+   "arquivo":"../musicas/cd6/musica9.mp3",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Yeshua, Cordeiro Santo",
+   "arquivo":"../musicas/cd6/musica10.mp3",
+   "descricao":"Encerramento do álbum."
+  }
+
+
+ ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<title>Shemá Yisrael</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<!-- IMPORTANTE: defer garante que o HTML carregue antes do JS -->
+<script src="../js/script.js" defer></script>
+
+</head>
+
+<body>
+
+<h1 id="titulo-album"></h1>
+
+<img src="../img/cd6.jpeg" class="capa-grande">
+
+<p id="descricao-album"></p>
+
+<h2 id="musica-atual"></h2>
+
+<p id="descricao-musica"></p>
+
+<!-- controls ajuda no debug -->
+<audio id="player" controls></audio>
+
+<div class="controles">
+<button onclick="anterior()">⏮ Anterior</button>
+<button onclick="playPause()">⏯ Play/Pause</button>
+<button onclick="proxima()">⏭ Próxima</button>
+</div>
+
+<h2>Faixas do álbum</h2>
+
+<ol id="lista-musicas">
+<li onclick="irPara(0)">Shemá</li>
+<li onclick="irPara(1)">Birkat Kohanin</li>
+<li onclick="irPara(2)">Shemá Yisrael</li>
+<li onclick="irPara(3)">Baruch Atah Yeshua</li>
+<li onclick="irPara(4)">Baruch Ha Ba B´shem Adonai</li>
+<li onclick="irPara(5)">Tehillim 23</li>
+<li onclick="irPara(6)">Santo, Santo, Santo</li>
+<li onclick="irPara(7)">Clamo Adonai (Salmo 18)</li>
+<li onclick="irPara(8)">Adorai ao Cordeiro</li>
+<li onclick="irPara(9)">Yeshua, Cordeiro Santo</li>
+</ol>
+
+<button onclick="window.location.href='../index.html'">Voltar</button>
+
+<!-- INICIALIZAÇÃO SEGURA -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    if (typeof carregarAlbum === "function") {
+        carregarAlbum("../data/cd6.json")
+    } else {
+        console.error("player.js não carregou")
+        alert("Erro ao carregar o player.js (verifique o caminho)")
+    }
+})
+</script>
+
+</body>
+</html>
