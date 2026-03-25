@@ -6,7 +6,7 @@
 
   {
    "titulo":"Livre",
-   "arquivo":"../musicas/cd7/musica1.wav",
+   "arquivo":"../musicas/cd7/musica1.mp3",
    "descricao":"Primeira faixa do álbum."
   },
 
@@ -48,7 +48,7 @@
 
   {
    "titulo":"Canção do Céu",
-   "arquivo":"../musicas/cd7/musica8.wav",
+   "arquivo":"../musicas/cd7/musica8.mp3",
    "descricao":"Reflexão musical."
   },
 
@@ -70,7 +70,7 @@
   },
     {
    "titulo":"Meu Coração Arde Por Ti",
-   "arquivo":"../musicas/cd7/musica12.mp3",
+   "arquivo":"../musicas/cd7/musica12.wav",
    "descricao":"Encerramento do álbum."
   },
     {
