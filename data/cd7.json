@@ -1,0 +1,84 @@
+{
+ "album": "Álbum: YESHUA",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"Livre",
+   "arquivo":"../musicas/cd7/musica1.wav",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"Santo é o Senhor",
+   "arquivo":"../musicas/cd7/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Deus dos Montes e dos Vales",
+   "arquivo":"../musicas/cd7/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"Com os Quatro Seres Viventes",
+   "arquivo":"../musicas/cd7/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Baruch Ha Ba Yeshua",
+   "arquivo":"../musicas/cd7/musica5.mp3",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Santidade",
+   "arquivo":"../musicas/cd7/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"Yeshua (Espontâneo)",
+   "arquivo":"../musicas/cd7/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"Canção do Céu",
+   "arquivo":"../musicas/cd7/musica8.wav",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"O Som que Ecoa Pela Eternidade",
+   "arquivo":"../musicas/cd7/musica9.mp3",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Poder dos Céus",
+   "arquivo":"../musicas/cd7/musica10.mp3",
+   "descricao":"Encerramento do álbum."
+  },
+    {
+   "titulo":"Eis Que Venho Sem Demora",
+   "arquivo":"../musicas/cd7/musica11.mp3",
+   "descricao":"Encerramento do álbum."
+  },
+    {
+   "titulo":"Meu Coração Arde Por Ti",
+   "arquivo":"../musicas/cd7/musica12.mp3",
+   "descricao":"Encerramento do álbum."
+  },
+    {
+   "titulo":"Jesus Breve Virá (Ministração)",
+   "arquivo":"../musicas/cd7/musica13.mp3",
+   "descricao":"Encerramento do álbum."
+  }
+
+
+ ]
+}
