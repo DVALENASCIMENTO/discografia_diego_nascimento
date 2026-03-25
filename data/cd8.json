@@ -36,7 +36,7 @@
 
   {
    "titulo":"Sangue Inocente",
-   "arquivo":"../musicas/cd8/musica6.mp3",
+   "arquivo":"../musicas/cd8/musica6.wav",
    "descricao":"Melodia suave."
   },
 
@@ -60,7 +60,7 @@
 
   {
    "titulo":"Teu Olhar",
-   "arquivo":"../musicas/cd8/musica10.mp3",
+   "arquivo":"../musicas/cd8/musica10.wav",
    "descricao":"Encerramento do álbum."
   }
 
