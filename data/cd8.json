@@ -1,0 +1,69 @@
+{
+ "album": "Álbum: Verdadeiro Amor",
+ "descricao": "Este álbum reúne composições que marcam uma fase importante da carreira.",
+ 
+ "musicas":[
+
+  {
+   "titulo":"Aquietai-vos",
+   "arquivo":"../musicas/cd8/musica1.mp3",
+   "descricao":"Primeira faixa do álbum."
+  },
+
+  {
+   "titulo":"Meu Abrigo",
+   "arquivo":"../musicas/cd8/musica2.mp3",
+   "descricao":"Canção sobre esperança."
+  },
+
+  {
+   "titulo":"Com Sol ou Chuva",
+   "arquivo":"../musicas/cd8/musica3.mp3",
+   "descricao":"Composição inspirada em experiências pessoais."
+  },
+
+  {
+   "titulo":"Canção do Verdadeiro Amor",
+   "arquivo":"../musicas/cd8/musica4.mp3",
+   "descricao":"Faixa contemplativa."
+  },
+
+  {
+   "titulo":"Deus Prova o Seu Amor",
+   "arquivo":"../musicas/cd8/musica5.mp3",
+   "descricao":"Mensagem de fé."
+  },
+
+  {
+   "titulo":"Sangue Inocente",
+   "arquivo":"../musicas/cd8/musica6.mp3",
+   "descricao":"Melodia suave."
+  },
+
+  {
+   "titulo":"Cristo Vive em Mim",
+   "arquivo":"../musicas/cd8/musica7.mp3",
+   "descricao":"Expressa alegria."
+  },
+
+  {
+   "titulo":"O Grande Amor de Deus",
+   "arquivo":"../musicas/cd8/musica8.mp3",
+   "descricao":"Reflexão musical."
+  },
+
+  {
+   "titulo":"Terceiro Céu",
+   "arquivo":"../musicas/cd8/musica9.mp3",
+   "descricao":"Canção sobre o tempo."
+  },
+
+  {
+   "titulo":"Teu Olhar",
+   "arquivo":"../musicas/cd8/musica10.mp3",
+   "descricao":"Encerramento do álbum."
+  }
+
+
+ ]
+}
